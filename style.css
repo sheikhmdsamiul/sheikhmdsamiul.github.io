@@ -61,7 +61,7 @@ nav .nav-links a:hover {
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(to right, #1e1e1e, #121212);
+    background: linear-gradient(135deg, #1e1e1e, #121212);
     padding: 150px 0;
     text-align: center;
     color: #fff;
@@ -78,7 +78,14 @@ nav .nav-links a:hover {
     margin: 10px 0 20px;
 }
 
-#hero .btn {
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
     background: #00c3ff;
     color: #121212;
     padding: 10px 20px;
@@ -88,8 +95,19 @@ nav .nav-links a:hover {
     transition: background 0.3s;
 }
 
-#hero .btn:hover {
+.btn:hover {
     background: #0099cc;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #00c3ff;
+    color: #00c3ff;
+}
+
+.btn-outline:hover {
+    background: #00c3ff;
+    color: #121212;
 }
 
 /* Sections */
