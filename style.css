@@ -208,6 +208,11 @@ section {
     gap: 20px;
 }
 
+.view-more-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
 .project-card {
     background: #1e1e1e;
     padding: 30px;
@@ -244,6 +249,8 @@ section {
 .project-card .btn:hover {
     background: #0099cc;
 }
+
+
 
 /* Contact Section */
 .contact-form {
