@@ -65,6 +65,70 @@
         .certificate-btn i {
             font-size: 1.1em;
         }
+
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .about-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0, 195, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 195, 255, 0.1);
+            border-color: rgba(0, 195, 255, 0.3);
+        }
+
+        .about-icon {
+            color: #00c3ff;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            background: rgba(0, 195, 255, 0.1);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .about-card:hover .about-icon {
+            background: #00c3ff;
+            color: #1a1a1a;
+            transform: scale(1.1);
+        }
+
+        .about-content h3 {
+            color: #00c3ff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .about-content p {
+            color: #ddd;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -114,12 +178,12 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">10+</span>
+                        <span class="stat-number">12+</span>
                         <span class="stat-label">Projects</span>
                     </div>
             
                     <div class="stat">
-                        <span class="stat-number">5+</span>
+                        <span class="stat-number">4+</span>
                         <span class="stat-label">Years Coding</span>
                     </div>
                 </div>
@@ -148,9 +212,37 @@
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <p class="section-description">Recent Computer Science and Engineering graduate from North South University, with a specialization in Artificial
-Intelligence. Proficient in Machine Learning and Natural Language Processing, with hands-on experience in database
-management, web development, and mobile app development. I am a quick learner and problem solver who thrives in team environments. Passionate about the tech industry, I am eager to apply my skills in an ever-evolving field that drives innovation and change.</p>
+            <div class="about-grid">
+                <div class="about-card animate__animated animate__fadeInUp">
+                    <div class="about-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="about-content">
+                        <h3>Background</h3>
+                        <p>Dedicated Computer Science and Engineering graduate from North South University, specializing in Artificial Intelligence and Machine Learning. With a strong foundation in cutting-edge AI technologies, I've developed expertise in Natural Language Processing, Deep Learning, and Large Language Models.</p>
+                    </div>
+                </div>
+
+                <div class="about-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="about-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="about-content">
+                        <h3>Technical Expertise</h3>
+                        <p>My technical portfolio encompasses full-stack development, featuring hands-on experience with modern AI frameworks and tools including PyTorch, TensorFlow, and Hugging Face Transformers. I've successfully implemented various AI solutions, from educational content enhancement systems to advanced language processing applications.</p>
+                    </div>
+                </div>
+
+                <div class="about-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="about-content">
+                        <h3>Vision & Goals</h3>
+                        <p>As a detail-oriented professional with a passion for innovation, I thrive on solving complex problems and creating intelligent solutions that drive technological advancement. I am particularly interested in developing AI applications that can make meaningful impacts in education, healthcare, and enterprise solutions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
