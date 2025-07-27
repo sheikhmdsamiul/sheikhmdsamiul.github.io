@@ -17,13 +17,69 @@
             margin-bottom: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         }
+        
+        .certificate-preview {
+            margin-top: 15px;
+        }
+        
+        .certificate-details {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(0, 195, 255, 0.1);
+            border-radius: 5px;
+        }
+        
+        .certificate-details p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        
+        .grade {
+            color: #00c3ff;
+            font-weight: 600;
+        }
+        
+        .credential-id {
+            color: #888;
+            font-family: monospace;
+        }
+        
+        .certificate-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid #00c3ff;
+            color: #00c3ff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .certificate-btn:hover {
+            background: #00c3ff;
+            color: #1a1a1a;
+            transform: translateY(-2px);
+        }
+        
+        .certificate-btn i {
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
-        <div class="container">
-            <a href="#" class="logo">S</a>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">SM</span>
+                <span class="logo-dot"></span>
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -36,18 +92,56 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="container">
-            <div class="hero-content animate__animated animate__fadeIn">
-                <img src="./Assets/Sheikh_Md._Samiul-.png" alt="Samiul Profile" class="profile-image">
-                <h1>Hi, There!</h1>
-                <h1>I'm Sheikh Md. Samiul</h1>
-                <p>AI/ML Enthusiast | CSE Graduate</p>
+        <div class="container hero-container">
+            <div class="hero-content-left animate__animated animate__fadeInLeft">
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Sheikh Md. Samiul</span>
+                    <span class="typed-text-wrapper">
+                        <span class="typed-text"></span>
+                    </span>
+                </h1>
+                <p class="hero-description">Transforming ideas into intelligent solutions through AI & Machine Learning</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="./Assets/Sheikh_Md__Samiul's_CV.pdf" download class="btn btn-outline">Download Resume</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="./Assets/Sheikh_Md__Samiul's_CV.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+            
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Coding</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-content-right animate__animated animate__fadeInRight">
+                <div class="profile-image-wrapper">
+                    <img src="./Assets/Sheikh_Md._Samiul-.png" alt="Samiul Profile" class="profile-image">
+                    <div class="profile-background"></div>
+                </div>
+                <div class="floating-skills">
+                    <span class="skill-bubble">PyTorch</span>
+                    <span class="skill-bubble">LLMs</span>
+                    <span class="skill-bubble">Transformers</span>
+                    <span class="skill-bubble">NLP</span>
+                    <span class="skill-bubble">Deep Learning</span>
+                    <span class="skill-bubble">LangChain</span>
+                    <span class="skill-bubble">Neural Networks</span>
+                    <span class="skill-bubble">TensorFlow</span>
                 </div>
             </div>
         </div>
+        <div class="hero-shape"></div>
     </section>
 
     <!-- About Section -->
@@ -63,11 +157,84 @@ management, web development, and mobile app development. I am a quick learner an
     <!-- Education Section -->
     <section id="education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-card animate__animated animate__fadeInUp">
-                <h3>Bachelor of Science in Computer Science and Engineering</h3>
-                <p>North South University</p>
-                <p>Graduated: December 2024</p>
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-timeline">
+                <div class="education-item degree animate__animated animate__fadeInUp">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Science in Computer Science and Engineering</h3>
+                        <div class="education-meta">
+                            <span class="institution"><i class="fas fa-university"></i> North South University</span>
+                            <span class="year"><i class="fas fa-calendar"></i> Graduated: December 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="certification-card animate__animated animate__fadeInUp">
+                        <div class="certification-header">
+                            <i class="fas fa-award"></i>
+                            <h3>Supervised Machine Learning</h3>
+                            <p class="cert-subtitle">Regression and Classification</p>
+                        </div>
+                        <div class="certification-body">
+                            <div class="cert-issuer">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Stacked_RGB_Blue.png" alt="Stanford" class="issuer-logo">
+                                <div class="issuer-info">
+                                    <p>DeepLearning.AI & Stanford</p>
+                                    <span>Issued: July 2025</span>
+                                </div>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-grade">
+                                    <i class="fas fa-star"></i>
+                                    <span>Grade: 99.60%</span>
+                                </div>
+                                <div class="cert-id">
+                                    <i class="fas fa-fingerprint"></i>
+                                    <span>ID: ETC3330HGZBR</span>
+                                </div>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/ETC3330HGZBR" target="_blank" class="verify-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Verify Credential
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certification-card animate__animated animate__fadeInUp">
+                        <div class="certification-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>Advanced Learning Algorithms</h3>
+                            <p class="cert-subtitle">Neural Networks & Deep Learning</p>
+                        </div>
+                        <div class="certification-body">
+                            <div class="cert-issuer">
+                                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/4a/cb36835ae3421187080898a7ecc11d/Stacked_RGB_Blue.png" alt="Stanford" class="issuer-logo">
+                                <div class="issuer-info">
+                                    <p>DeepLearning.AI & Stanford</p>
+                                    <span>Issued: July 2025</span>
+                                </div>
+                            </div>
+                            <div class="cert-details">
+                                <div class="cert-grade">
+                                    <i class="fas fa-star"></i>
+                                    <span>Grade: 99.60%</span>
+                                </div>
+                                <div class="cert-id">
+                                    <i class="fas fa-fingerprint"></i>
+                                    <span>ID: 53FB5CB1BI3M</span>
+                                </div>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/53FB5CB1BI3M" target="_blank" class="verify-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Verify Credential
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -124,26 +291,127 @@ management, web development, and mobile app development. I am a quick learner an
     <!-- Projects Section -->
     <section id="projects">
     <div class="container">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card animate__animated animate__fadeInUp">
-                <h3>Educational Content Enhancement</h3>
-                <p>Developed a web application integrating LLMs to modify educational PDFs for enhanced engagement.</p>
-                <a href="https://github.com/sheikhmdsamiul/Educational-Content-Enhancement-Using-LLMs" target="_blank" class="btn">View Project</a>
+                <div class="project-header">
+                    <i class="fas fa-robot project-icon"></i>
+                    <h3>Educational Content Enhancement Using LLMs</h3>
+                    <div class="project-tags">
+                        <span class="tag">LLMs</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">Groq</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">Developed an AI-powered educational platform with advanced RAG system and dynamic PDF content transformation leveraging LLMs via Groq API.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Re-ranker-based vector search system</li>
+                            <li>Summa-Textrank highlighting</li>
+                            <li>Interactive AI chatbot</li>
+                            <li>Auto-generated quizzes with instant evaluation</li>
+                        </ul>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>Python, Hugging Face</li>
+                            <li>LangChain, Groq API</li>
+                            <li>Streamlit for web interface</li>
+                            <li>Vector databases for RAG</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/sheikhmdsamiul/Educational-Content-Enhancement-Using-LLMs" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        <span>View Project</span>
+                    </a>
+                </div>
             </div>
+
             <div class="project-card animate__animated animate__fadeInUp">
-                <h3>Car Price Predictor</h3>
-                <p>Built a machine learning system to predict the selling prices of used cars using Scikit-learn and Streamlit.</p>
-                <a href="https://github.com/sheikhmdsamiul/Used-Car-Price-Prediction-using-Machine-Learning" target="_blank" class="btn">View Project</a>
+                <div class="project-header">
+                    <i class="fas fa-shield-alt project-icon"></i>
+                    <h3>Offensive Language Classification</h3>
+                    <div class="project-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">LSTM</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Keras</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">Developed a toxic language classifier combining Logistic Regression as base model and LSTM with attention mechanism, achieving 80% accuracy.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Hybrid model architecture (LR + LSTM)</li>
+                            <li>Attention mechanism implementation</li>
+                            <li>Robust data preprocessing pipeline</li>
+                            <li>Class imbalance handling</li>
+                        </ul>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>Python, Scikit-learn</li>
+                            <li>TensorFlow/Keras</li>
+                            <li>NLTK for text processing</li>
+                            <li>Advanced neural architectures</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/sheikhmdsamiul/offensive-language-classification" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        <span>View Project</span>
+                    </a>
+                </div>
             </div>
+
             <div class="project-card animate__animated animate__fadeInUp">
-                <h3>Customer Churn Prediction</h3>
-                <p>Developed a machine learning system to predict customer churn using historical data and PyCaret.</p>
-                <a href="https://github.com/sheikhmdsamiul/Customer-Churn-Prediction-w-Pycarat" target="_blank" class="btn">View Project</a>
+                <div class="project-header">
+                    <i class="fas fa-file-alt project-icon"></i>
+                    <h3>Text Summarization System</h3>
+                    <div class="project-tags">
+                        <span class="tag">T5</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <p class="project-description">Fine-tuned T5 (Text-to-Text Transfer Transformer) model for text summarization and created a web application with efficient processing pipelines.</p>
+                    <div class="project-details">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>T5 model fine-tuning</li>
+                            <li>Efficient data preprocessing</li>
+                            <li>Advanced evaluation metrics</li>
+                            <li>Web-based interface</li>
+                        </ul>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>Python, PyTorch</li>
+                            <li>Hugging Face Transformers</li>
+                            <li>PyTorch Lightning</li>
+                            <li>ROUGE metrics for evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/sheikhmdsamiul/text-summarization-system" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        <span>View Project</span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="view-more-wrapper">
-            <a href="https://github.com/sheikhmdsamiul/" target="_blank" class="btn">View more on GitHub</a>
+            <a href="https://github.com/sheikhmdsamiul/" target="_blank" class="btn btn-outline">
+                <i class="fab fa-github"></i>
+                <span>View More Projects on GitHub</span>
+            </a>
         </div>
     </div>
 </section>
@@ -175,7 +443,43 @@ management, web development, and mobile app development. I am a quick learner an
 
     <!-- Scroll Reveal Animation -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Typed.js initialization
+        new Typed('.typed-text', {
+            strings: ['Aspiring AI/ML Engineer', 'Problem Solver', 'Quick Learner'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000,  
+            startDelay: 1000, 
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        // Scroll reveal animations
         ScrollReveal().reveal('.animate__animated', {
             delay: 200,
             distance: '20px',
@@ -183,6 +487,39 @@ management, web development, and mobile app development. I am a quick learner an
             easing: 'ease-in-out',
             origin: 'bottom',
             interval: 100
+        });
+
+        // Navbar scroll behavior
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            // Add/remove background on scroll
+            if (currentScroll > 50) {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 10, 0.8)';
+            }
+
+            // Add active class to nav links
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+
+            lastScroll = currentScroll;
         });
     </script>
 </body>
