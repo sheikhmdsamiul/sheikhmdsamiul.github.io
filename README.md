@@ -1,53 +1,76 @@
 # Sheikh Md. Samiul's Portfolio
 
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fsheikhmdsamiul.github.io)](https://sheikhmdsamiul.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sheikhsamiul07-blue)](https://linkedin.com/in/sheikhsamiul07)
 
-Welcome to my personal portfolio website's repository! This site showcases my journey and expertise in AI/ML engineering, featuring my projects, skills, and professional achievements.
+Welcome to my personal portfolio website's repository! As an AI/ML enthusiast and Computer Science graduate, I specialize in developing intelligent solutions with a focus on multilingual natural language processing and machine learning applications.
 
 ## 🚀 Featured Projects
 
-- **Educational Content Enhancement Using LLMs**: An AI-powered educational platform with advanced RAG system leveraging LLMs via Groq API
-- **Offensive Language Classification**: A hybrid model combining Logistic Regression and LSTM with attention mechanism
-- **Text Summarization System**: Fine-tuned T5 model with efficient processing pipelines
+- **MultilingualRAG - Document Q&A System**: A sophisticated Multilingual RAG system enabling intelligent question-answering about Bengali/English PDF documents using Groq LLM, featuring specialized OCR processing and advanced retrieval mechanisms
+- **Offensive Language Classification**: A hybrid model combining Logistic Regression and LSTM with attention mechanism, achieving 80% accuracy in toxic content detection
+- **Text Summarization System**: Fine-tuned T5 model for efficient text summarization with advanced evaluation metrics and web interface
 
 ## 🛠️ Technical Stack
 
-### AI/Machine Learning
-- PyTorch, TensorFlow
-- Hugging Face Transformers
-- LangChain, Groq API
-- BERT, GPT-based models
-- Neural Networks & Deep Learning
+### Programming Languages
+- Python, Java, C/C++, SQL, Assembly
 
-### Programming & Tools
-- Python, SQL, Java, C++
-- Git, Docker
-- Jupyter Notebook, VS Code
-- Flask, Streamlit
+### AI/ML & Data Science
+- **Frameworks**: PyTorch, TensorFlow, Hugging Face, Scikit-learn, LangChain
+- **Data Tools**: Pandas, NumPy, Matplotlib, Seaborn
+- **Specialties**: NLP, Deep Learning, RAG Systems, Neural Networks
+
+### Web & Mobile Development
+- **Web**: HTML, CSS, JavaScript, Django, Flask, Streamlit
+- **Mobile**: Flutter
+- **Databases**: Firebase, MySQL
+
+### DevOps & Tools
+- Docker for containerization
+- Version Control with Git
+- Development environments: VS Code, Jupyter Notebook
 
 ## 🎓 Education & Certifications
 
+### Academic Background
 - **BSc in Computer Science and Engineering**
   - North South University
+  - Specialized in Artificial Intelligence and Machine Learning
   - Graduated: December 2024
 
-### Certifications
-1. [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/account/accomplishments/verify/ETC3330HGZBR) - Stanford & DeepLearning.AI
-2. [Advanced Learning Algorithms](https://www.coursera.org/account/accomplishments/verify/53FB5CB1BI3M) - Stanford & DeepLearning.AI
+### Professional Certifications
+1. [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/account/accomplishments/verify/ETC3330HGZBR)
+   - Institution: Stanford University & DeepLearning.AI
+   - Grade: 99.60%
+
+2. [Advanced Learning Algorithms](https://www.coursera.org/account/accomplishments/verify/53FB5CB1BI3M)
+   - Institution: Stanford University & DeepLearning.AI
+   - Focus: Neural Networks & Deep Learning
+   - Grade: 99.60%
+
+## 💼 Professional Skills
+
+- **Technical Expertise**: Strong foundation in AI/ML algorithms, multilingual NLP, and full-stack development
+- **Problem Solving**: Analytical thinking with focus on innovative solutions
+- **Teamwork**: Effective collaboration and communication in diverse teams
+- **Adaptability**: Quick learning and adaptation to new technologies
+- **Time Management**: Efficient project handling and deadline adherence
 
 ## 🌐 Connect with Me
 
-- [LinkedIn](https://linkedin.com/in/sheikhsamiul07)
-- [GitHub](https://github.com/sheikhmdsamiul)
-- [Email](mailto:sk.mohammad.samiul@gmail.com)
+- 💼 [LinkedIn](https://linkedin.com/in/sheikhsamiul07)
+- 🔗 [Portfolio Website](https://sheikhmdsamiul.github.io)
+- 📧 [Email](mailto:sk.mohammad.samiul@gmail.com)
+- � [GitHub](https://github.com/sheikhmdsamiul)
 
-## 🔧 Website Technologies
+## 🔧 Portfolio Implementation
 
-This portfolio is built with:
-- HTML5/CSS3
-- JavaScript (ES6+)
-- Typed.js for dynamic text
-- ScrollReveal for animations
-- Font Awesome for icons
-- Responsive design principles
+Built with modern web technologies and best practices:
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Animations**: Typed.js for dynamic text effects
+- **UI/UX**: Responsive design, ScrollReveal for smooth animations
+- **Assets**: Font Awesome icons, Custom CSS animations
+- **Performance**: Optimized loading and rendering
+- **Deployment**: GitHub Pages for reliable hosting
 
